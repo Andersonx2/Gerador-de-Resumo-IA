@@ -1,0 +1,21 @@
+#logs
+*.log
+npm-debg.log*
+yearn-debug.log*
+yearn-debug.erro.log*
+pnpm-debug.log*
+lerna-debub.log*
+
+node_modules 
+dist
+*local
+# Editor directories and files 
+.vscode/* 
+!.vscode/extensions.json
+.idea
+.Ds_Store
+*suo
+*.ntvs*
+*.njsproj
+*.sln
+*sw? 
