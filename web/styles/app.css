@@ -25,3 +25,7 @@
   color: #7c7c8a;
   user-select: none;
 }
+#app > img {
+  width: 100px; 
+
+}
