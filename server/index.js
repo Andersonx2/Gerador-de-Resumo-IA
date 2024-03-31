@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import cors from "cors"
 import express from "express"
 
@@ -37,3 +38,29 @@ app.post("/summary", async (request, response) => {
 })
 
 app.listen(3333, () => console.log("Server is running on port 3333"))
+=======
+import cors from 'cors'
+import express from 'express'
+import { download } from "./dowload.js"
+import { transcribe } from './transcribe.js'
+  
+
+const app = express()
+app.use(cors())
+
+
+app.get('/summary/:id', async (request, response) =>  {
+   await download(request.params.id)
+    const result = await transcribe()
+
+
+    response.json({result })
+
+})
+
+
+
+app.listen(3333, () => console.log('server ins runnin on port 3333') )
+
+
+>>>>>>> 6d694feae1ed062abf9fddf8b59b29035b2891d1

@@ -1,0 +1,42 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app > h1 {
+  color: #996dff;
+}
+
+#app > img {
+  width: 64px;
+}
+body,
+button,
+input {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+#app > h1 {
+    font-family: 'Rubik Lines';font-size: 59px;
+}
+
+#app > h2 {
+    align-self: flex-start;
+    margin-top: 64px;
+}
+
+
+#app > p { 
+align-self: flex-start;    
+width: 512px;
+text-align: justify;
+margin-top: -7px;
+}
+
+#app .placeholder {
+    color: #7c7c8a; 
+    user-select: none;
+    
+}

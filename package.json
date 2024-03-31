@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "nlwia",
+=======
+  "name": "ianlw",
+>>>>>>> 6d694feae1ed062abf9fddf8b59b29035b2891d1
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "web": "vite",
+<<<<<<< HEAD
     "server": "env YTDL_NO_UPDATE=1 node --watch --no-warnings server/index.js"
   },
   "devDependencies": {
@@ -18,6 +23,18 @@
     "ffmpeg-static": "^5.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "node-wav": "^0.0.2",
+=======
+    "server": "node --watch server/index.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "axios": "^1.6.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "git": "^0.1.5",
+>>>>>>> 6d694feae1ed062abf9fddf8b59b29035b2891d1
     "ytdl-core": "4.10.0"
   }
 }
