@@ -19,14 +19,13 @@ form.addEventListener("submit", async () => {
   console.log(videoId)
 
   const transcription = await server.get("/summary/" + videoId)
-  console.log(transcription)
+
+  console.log("essa e a transcricao do video: ", transcription)
 
   content.textContent = "realizando o resumo..."
 
   const summary = await server.post("/summary", {
     text: transcription.data.result,
   })
-
   content.textContent = summary.data.result
-  console.log(content.textContent)
 })

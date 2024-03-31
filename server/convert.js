@@ -2,12 +2,9 @@ import fs from "fs"
 import wav from "node-wav"
 import ffmpeg from "fluent-ffmpeg"
 import ffmpegStatic from "ffmpeg-static"
-import { promises } from "dns"
-import { resolve } from "path"
-import { rejects } from "assert"
-import { error } from "console"
 
-const outputPath = "./tmp/audio.mp4".replace(".mp4", ".wav")
+const filePath = "./tmp/audio.mp4"
+const outputPath = filePath.replace(".mp4", ".wav")
 
 export const convert = () =>
   new Promise((resolve, reject) => {
@@ -15,7 +12,7 @@ export const convert = () =>
 
     ffmpeg.setFfmpegPath(ffmpegStatic)
     ffmpeg()
-      .input("./tmp/audio.mp4")
+      .input(filePath)
       .audioFrequency(16000)
       .audioChannels(1)
       .format("wav")
