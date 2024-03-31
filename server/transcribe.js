@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { pipeline } from "@xenova/transformers"
 import { transcriptionExample } from "./utils/transcription.js"
 export async function transcribe(audio) {
@@ -21,3 +22,9 @@ export async function transcribe(audio) {
     throw new Error(error)
   }
 }
+=======
+import { transcribe } from "./utils/transcription"
+export async  function transcribe(){
+
+}
+>>>>>>> 6d694feae1ed062abf9fddf8b59b29035b2891d1
