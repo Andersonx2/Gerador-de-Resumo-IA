@@ -8,17 +8,18 @@
     "server": "node --watch server/index.js"
   },
   "devDependencies": {
-    "vite": "^5.0.8"
+    "vite": "^5.2.8"
   },
   "dependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.14.0",
     "@xenova/transformers": "^2.16.1",
-    "axios": "^1.6.3",
+    "axios": "^1.6.8",
     "cors": "^2.8.5",
-    "express": "^4.18.2",
+    "express": "^4.19.2",
     "ffmpeg-static": "^5.2.0",
     "fluent-ffmpeg": "^2.1.2",
     "git": "^0.1.5",
     "node-wav": "^0.0.2",
-    "ytdl-core": "4.10.0"
+    "ytdl-core": "^4.10.0"
   }
 }
