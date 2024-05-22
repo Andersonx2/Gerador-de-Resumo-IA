@@ -37,4 +37,12 @@ app.post("/summary", async (request, response) => {
   }
 })
 
-app.listen(3333, () => console.log("server ins runnin on port 3333"))
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+
+
+
+// app.listen(3333, () => console.log("server ins runnin on port 3333"))
