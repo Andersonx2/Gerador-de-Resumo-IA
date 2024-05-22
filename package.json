@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "web": "vite",
-    "server": "node --watch server/index.js"
+    "server": "node --watch server/index.js",
+    "build": "babel src -d lib"
   },
   "devDependencies": {
     "vite": "^5.2.8"
